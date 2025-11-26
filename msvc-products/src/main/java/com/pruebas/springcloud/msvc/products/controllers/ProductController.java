@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping
 public class ProductController {
 
     private final ProductService service;
