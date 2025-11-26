@@ -9,10 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.pruebas.springcloud.msvc.items.models.ProductuDTO;
 
 /* Configuracion de forma directa prueba 1*/
-//@FeignClient(url = "localhost:8001", name = "msvc-products", path = "/api/products")
-
-/* Configuracion de forma directa prueba 2*/
-@FeignClient(name = "msvc-products", path = "/api/products")
+@FeignClient(url = "localhost:8001", name = "msvc-products", path = "/api/products")
 public interface ProductFeignClient {
 
     @GetMapping
