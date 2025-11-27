@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.pruebas.springcloud.msvc.items.client.ProductFeignClient;
@@ -15,6 +16,7 @@ import com.pruebas.springcloud.msvc.items.models.ProductuDTO;
 import feign.FeignException;
 
 @Service
+@Primary
 public class ItemServiceFeign implements ItemService{
 
     @Autowired

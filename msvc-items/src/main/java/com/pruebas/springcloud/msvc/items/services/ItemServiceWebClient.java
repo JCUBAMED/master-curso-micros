@@ -17,7 +17,7 @@ import com.pruebas.springcloud.msvc.items.models.Item;
 import com.pruebas.springcloud.msvc.items.models.ProductuDTO;
 
 @Service
-@Primary
+//@Primary
 public class ItemServiceWebClient implements ItemService{
 
     private final WebClient.Builder client;

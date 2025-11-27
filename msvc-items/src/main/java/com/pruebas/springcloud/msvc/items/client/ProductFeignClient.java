@@ -12,7 +12,7 @@ import com.pruebas.springcloud.msvc.items.models.ProductuDTO;
 //@FeignClient(url = "localhost:8001", name = "msvc-products", path = "/api/products")
 
 /* Configuracion de forma directa prueba 2*/
-@FeignClient(name = "msvc-products", path = "/api/products")
+@FeignClient(name = "msvc-products")
 public interface ProductFeignClient {
 
     @GetMapping
